@@ -1,0 +1,29 @@
+#####################
+# ECE553 2022 Fall  #
+# Circuit2  	    #
+# ISCAS(bench)format#
+#####################
+
+INPUT(G0)
+INPUT(G1)
+INPUT(G2)
+INPUT(G3)
+
+OUTPUT(G10)
+
+G5 = DFF(G17)
+G6 = DFF(G11)
+G7 = OR(G9, G8)
+G8 = NAND(G12, G6)
+G9 = NAND(G1, G15)
+G10 = NOT(G11)
+G11 = OR(G5, G12)
+G12 = NAND(G13, G7)
+G13 = NAND(G3, G8)
+G14 = NOT(G0)
+G15 = DFF(G16)
+G16 = NAND(G2, G9)
+G17 = NAND(G14, G11, G15)
+
+
+
